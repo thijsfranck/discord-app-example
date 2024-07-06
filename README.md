@@ -44,6 +44,15 @@ With your development environment set up, you can run the bot using the followin
 poetry run python main.py
 ```
 
+> [!IMPORTANT]
+> The bot requires a Discord bot token to run. You can create a new bot and obtain a token from the [Discord Developer Portal](https://discord.com/developers/applications).
+>
+> The token should be stored in a `.env` file in the project root directory:
+>
+> ```plaintext
+> DISCORD_TOKEN=your_token
+> ```
+
 ## Release
 
 To build and push a new version of the Docker image, create a new release on GitHub along with a new tag. The GitHub Actions workflow will automatically build and push the image to the registry.
