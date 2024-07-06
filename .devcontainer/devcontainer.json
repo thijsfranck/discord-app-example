@@ -9,7 +9,7 @@
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
 		"ghcr.io/devcontainers/features/python:1": {
 			"version": "3.12",
-			"installTools": "false"
+			"installTools": false
 		},
 		"ghcr.io/devcontainers-contrib/features/act:1": {},
 		"ghcr.io/devcontainers-contrib/features/poetry:2": {}
@@ -25,8 +25,17 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"charliermarsh.ruff"
-			]
+				"charliermarsh.ruff",
+				"-ms-python.autopep8" // Disable conflicting extension installed by the Python feature
+			],
+			"settings": {
+				"editor.formatOnSave": true,
+				"editor.formatOnSaveMode": "file",
+				"python.analysis.typeCheckingMode": "basic",
+				"[python]": {
+					"editor.defaultFormatter": "charliermarsh.ruff"
+				}
+			}
 		}
 	}
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
