@@ -73,9 +73,13 @@ With your development environment set up, you can run the bot using the followin
 poetry run python main.py
 ```
 
-## Release
+### Release
 
 To build and push a new version of the Docker image, create a new release on GitHub along with a new tag. The GitHub Actions workflow will automatically build and push the image to the registry.
 
 > [!NOTE]
 > Tags should follow the [Semantic Versioning](https://semver.org/) format. For example, `v1.0.0`.
+
+## License
+
+This project is licensed under the [MIT license](./LICENSE).
