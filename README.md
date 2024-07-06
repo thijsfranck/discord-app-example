@@ -40,7 +40,7 @@ To get started, refer to the setup guide for your IDE:
 
 ### Manual Setup
 
-To install the project locally, clone the repository and install the dependencies:
+To set up the project locally, first install the dependencies:
 
 ```bash
 poetry install
