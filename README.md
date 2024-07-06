@@ -20,6 +20,26 @@ docker run -e DISCORD_TOKEN=your_token ghcr.io/thijsfranck/discord-app-example:l
 
 ## Development
 
+Follow the steps below to set up a development environment for the bot. Start by cloning the repository:
+
+```bash
+git clone https://github.com/thijsfranck/discord-app-example.git
+```
+
+### Automated Setup
+
+The project includes a [development container](https//containers.dev) to automatically set up your development environment.
+
+To get started, refer to the setup guide for your IDE:
+
+- [Visual Studio Code](https://code.visualstudio.com/docs/devcontainers/tutorialpycha)
+- [PyCharm](https://www.jetbrains.com/help/pycharm/connect-to-devcontainer.html)
+
+> [!TIP]
+> Alternatively, you can use a [GitHub Codespace](https://docs.github.com/en/codespaces/getting-started/quickstart) to set up your development environment in the cloud.
+
+### Manual Setup
+
 To install the project locally, clone the repository and install the dependencies:
 
 ```bash
@@ -32,26 +52,23 @@ It is also recommended to install the pre-commit hooks:
 pre-commit install
 ```
 
-> [!TIP]
-> The project includes a [development container](https//containers.dev) to automatically set up your development environment.
-> To get started, refer to the setup guide for your IDE:
-> - [Visual Studio Code](https://code.visualstudio.com/docs/devcontainers/tutorialpycha)
-> - [PyCharm](https://www.jetbrains.com/help/pycharm/connect-to-devcontainer.html)
+### Discord Bot Token
+
+The bot requires a Discord bot token to run. You can create a new bot and obtain a token from the [Discord Developer Portal](https://discord.com/developers/applications).
+
+The token should be stored in a `.env` file in the project root directory:
+
+```plaintext
+DISCORD_TOKEN=your_token
+```
+
+### Running the Bot
 
 With your development environment set up, you can run the bot using the following command:
 
 ```bash
 poetry run python main.py
 ```
-
-> [!IMPORTANT]
-> The bot requires a Discord bot token to run. You can create a new bot and obtain a token from the [Discord Developer Portal](https://discord.com/developers/applications).
->
-> The token should be stored in a `.env` file in the project root directory:
->
-> ```plaintext
-> DISCORD_TOKEN=your_token
-> ```
 
 ## Release
 
