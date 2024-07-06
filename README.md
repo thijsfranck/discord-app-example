@@ -12,11 +12,16 @@ docker pull ghcr.io/thijsfranck/discord-app-example:latest
 
 ## Usage
 
-The bot requires a Discord bot token to run. This token can be provided as an environment variable:
+Once you have pulled the Docker image, you can run the bot using the following command:
 
 ```bash
 docker run -e DISCORD_TOKEN=your_token ghcr.io/thijsfranck/discord-app-example:latest
 ```
+
+> [!IMPORTANT]
+> The bot requires a Discord bot token to run. You can create a new bot and obtain a token from the [Discord Developer Portal](https://discord.com/developers/applications).
+>
+> Your token should have the `bot` scope. Do not share your token with anyone.
 
 ## Development
 
