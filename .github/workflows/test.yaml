@@ -11,8 +11,6 @@ on:
 permissions:
   contents: read
 
-timeout-minutes: 10
-
 jobs:
   main:
     runs-on: ubuntu-latest
