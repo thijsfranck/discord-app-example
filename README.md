@@ -56,6 +56,9 @@ pre-commit install
 
 The bot requires a Discord bot token to run. You can create a new bot and obtain a token from the [Discord Developer Portal](https://discord.com/developers/applications).
 
+> [!IMPORTANT]
+> Your token should have the `bot` scope. Do not share your token with anyone.
+
 The token should be stored in a `.env` file in the project root directory:
 
 ```plaintext
