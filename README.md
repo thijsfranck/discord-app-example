@@ -32,7 +32,7 @@ The project includes a [development container](https//containers.dev) to automat
 
 To get started, refer to the setup guide for your IDE:
 
-- [Visual Studio Code](https://code.visualstudio.com/docs/devcontainers/tutorialpycha)
+- [Visual Studio Code](https://code.visualstudio.com/docs/devcontainers/tutorial)
 - [PyCharm](https://www.jetbrains.com/help/pycharm/connect-to-devcontainer.html)
 
 > [!TIP]
