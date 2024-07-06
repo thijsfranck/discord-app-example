@@ -40,7 +40,7 @@ To get started, refer to the setup guide for your IDE:
 
 ### Manual Setup
 
-To set up the project locally, first install the dependencies:
+To set up the project locally, first install the dependencies using [Poetry](https://python-poetry.org/):
 
 ```bash
 poetry install
@@ -49,7 +49,7 @@ poetry install
 It is also recommended to install the pre-commit hooks:
 
 ```bash
-pre-commit install
+poetry run pre-commit install
 ```
 
 ### Discord Bot Token
