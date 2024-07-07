@@ -37,7 +37,7 @@ jobs:
         run: poetry build
 
       - name: Build Docker Image
-        run: docker build . -t ghcr.io/thijsfranck/discord-app-example:${{ github.ref }}
+        run: docker build . -t ghcr.io/thijsfranck/discord-app-example:${{ github.ref_name }}
 
       - name: Publish Docker Image
-        run: docker push ghcr.io/thijsfranck/discord-app-example:${{ github.ref }}
+        run: docker push ghcr.io/thijsfranck/discord-app-example:${{ github.ref_name }}
