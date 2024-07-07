@@ -36,8 +36,9 @@ jobs:
       - name: Build the Application
         run: poetry build -f wheel
 
-      - name: Build Docker Image
-        run: docker build . -t ghcr.io/thijsfranck/discord-app-example:${{ github.ref_name }}
-
-      - name: Publish Docker Image
-        run: docker push ghcr.io/thijsfranck/discord-app-example:${{ github.ref_name }}
+      - name: Build and Publish the Docker Image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: ghcr.io/thijsfranck/discord-app-example:${{ github.ref_name }}
