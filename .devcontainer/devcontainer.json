@@ -12,7 +12,8 @@
 			"installTools": false
 		},
 		"ghcr.io/devcontainers-contrib/features/act:1": {},
-		"ghcr.io/devcontainers-contrib/features/poetry:2": {}
+		"ghcr.io/devcontainers-contrib/features/poetry:2": {},
+		"ghcr.io/prulloac/devcontainer-features/commitizen:1": {}
 	},
 	"containerEnv": {
 		"POETRY_VIRTUALENVS_CREATE": "false"
