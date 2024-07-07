@@ -25,10 +25,11 @@
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
+			// Disable the autopep8 extension as it conflicts with Ruff.
 			"extensions": [
 				"charliermarsh.ruff",
 				"KnisterPeter.vscode-commitizen",
-				// Disable the autopep8 extension as it conflicts with Ruff.
+				"yzhang.markdown-all-in-one",
 				"-ms-python.autopep8"
 			],
 			"settings": {
