@@ -27,7 +27,9 @@
 		"vscode": {
 			"extensions": [
 				"charliermarsh.ruff",
-				"-ms-python.autopep8" // Disable conflicting extension installed by the Python feature
+				"KnisterPeter.vscode-commitizen",
+				// Disable the autopep8 extension as it conflicts with Ruff.
+				"-ms-python.autopep8"
 			],
 			"settings": {
 				"editor.formatOnSave": true,
