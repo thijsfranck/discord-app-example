@@ -45,7 +45,12 @@ To get started, refer to the setup guide for your IDE:
 
 ### Manual Setup
 
-To set up the project locally, first install the dependencies using [Poetry](https://python-poetry.org/):
+If you prefer to set up the development environment manually, follow the steps below.
+
+> [!IMPORTANT]
+> The manual setup requires [Python 3.12](https://www.python.org) and [Poetry](https://python-poetry.org) to be installed on your system.
+
+To get started, install the project dependencies using Poetry:
 
 ```bash
 poetry install
