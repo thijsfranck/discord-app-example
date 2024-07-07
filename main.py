@@ -1,5 +1,7 @@
+import logging
 import os
 
+import discord
 from dotenv import load_dotenv
 
 from discord_app_example import client
@@ -7,10 +9,18 @@ from discord_app_example import client
 if __name__ == "__main__":
     load_dotenv()
 
-    TOKEN = os.getenv("DISCORD_TOKEN")
+    TOKEN = os.getenv("DISCORD_TOKEN", "")
 
-    if not TOKEN:
-        message = "Discord bot token not found. Please set the DISCORD_TOKEN environment variable."
-        raise ValueError(message)
-
-    client.run(TOKEN)
+    try:
+        # Apply the discord.py logger configuration to the root logger to ensure well formatted logs
+        client.run(
+            token=TOKEN,
+            root_logger=True,
+            log_level=logging.INFO,
+        )
+    except discord.LoginFailure:
+        logging.critical(
+            logging.critical(
+                "Invalid Discord token. Check the DISCORD_TOKEN environment variable.",
+            ),
+        )
