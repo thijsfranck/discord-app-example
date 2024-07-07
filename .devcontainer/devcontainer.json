@@ -35,6 +35,11 @@
 				"editor.formatOnSave": true,
 				"editor.formatOnSaveMode": "file",
 				"python.analysis.typeCheckingMode": "basic",
+				"python.testing.pytestArgs": [
+					"."
+				],
+				"python.testing.unittestEnabled": false,
+				"python.testing.pytestEnabled": true,
 				"[python]": {
 					"editor.defaultFormatter": "charliermarsh.ruff"
 				}
