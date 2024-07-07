@@ -10,8 +10,12 @@ permissions:
   packages: write
 
 jobs:
-  main:
+  publish:
     runs-on: ubuntu-latest
+
+    env:
+      POETRY_VIRTUALENVS_CREATE: "false"
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
