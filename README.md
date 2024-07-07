@@ -25,13 +25,21 @@ docker run -e DISCORD_TOKEN=your_token ghcr.io/thijsfranck/discord-app-example:l
 
 ## Development
 
-Follow the steps below to set up a development environment for the bot. Start by cloning the repository:
+Follow the steps below to get started with the development environment.
+
+### Cloning the Repository
+
+To clone the repository, run the following command:
 
 ```bash
 git clone https://github.com/thijsfranck/discord-app-example.git
 ```
 
-### Automated Setup
+### Environment Setup
+
+You can set up the development environment using either the automated or manual setup process.
+
+#### Automated Setup
 
 The project includes a [development container](https//containers.dev) to automatically set up your development environment.
 
@@ -43,14 +51,14 @@ To get started, refer to the setup guide for your IDE:
 > [!TIP]
 > Alternatively, you can use a [GitHub Codespace](https://docs.github.com/en/codespaces/getting-started/quickstart) to set up your development environment in the cloud.
 
-### Manual Setup
+#### Manual Setup
 
 If you prefer to set up the development environment manually, follow the steps below.
 
 > [!IMPORTANT]
-> The manual setup requires [Python 3.12](https://www.python.org) and [Poetry](https://python-poetry.org) to be installed on your system.
+> Please ensure [Python 3.12](https://www.python.org) and [Poetry](https://python-poetry.org) are installed on your system.
 
-To get started, install the project dependencies using Poetry:
+Start by installing the project dependencies using Poetry:
 
 ```bash
 poetry install
