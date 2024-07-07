@@ -20,7 +20,5 @@ if __name__ == "__main__":
         )
     except discord.LoginFailure:
         logging.critical(
-            logging.critical(
-                "Invalid Discord token. Check the DISCORD_TOKEN environment variable.",
-            ),
+            "Invalid Discord token. Check the DISCORD_TOKEN environment variable.",
         )
