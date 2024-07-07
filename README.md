@@ -41,7 +41,7 @@ You can set up the development environment using either the automated or manual 
 
 #### Automated Setup
 
-The project includes a [development container](https//containers.dev) to automatically set up your development environment.
+The project includes a [development container](https://containers.dev) to automatically set up your development environment.
 
 To get started, refer to the setup guide for your IDE:
 
