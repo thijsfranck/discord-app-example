@@ -82,7 +82,7 @@ See the [Usage](#usage) section on how to obtain a Discord bot token.
 
 ### Running the Bot
 
-With your development environment set up, you can run the bot using the following command:
+With your development environment and the Discord bot token set up, you can run the bot using the following command:
 
 ```bash
 poetry run python main.py
