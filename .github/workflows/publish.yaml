@@ -34,7 +34,7 @@ jobs:
           poetry-version: 1.8.3
 
       - name: Build the Application
-        run: poetry build
+        run: poetry build -f wheel
 
       - name: Build Docker Image
         run: docker build . -t ghcr.io/thijsfranck/discord-app-example:${{ github.ref_name }}
