@@ -4,23 +4,26 @@ This is a simple example of a Discord bot using the [discord.py](https://discord
 
 ## Installation
 
-The application is distributed as a Docker image. It is available from the [GitHub Container Registry](https://github.com/thijsfranck?tab=packages&repo_name=discord-app-example):
+The application is distributed as a Docker image. Run the following command to install the latest version:
 
 ```bash
-docker pull ghcr.io/thijsfranck/discord-app-example:latest
+docker run ghcr.io/thijsfranck/discord-app-example:latest
 ```
 
-## Usage
+> [!NOTE]
+> Previous versions of the image are available on the [GitHub Container Registry](https://github.com/thijsfranck?tab=packages&repo_name=discord-app-example).
 
-Once you have pulled the Docker image, you can run the bot using the following command:
+## Configuration
 
-```bash
-docker run -e DISCORD_TOKEN=your_token ghcr.io/thijsfranck/discord-app-example:latest
-```
+The following environment variables are available to configure the bot:
+
+| Variable        | Description                                                              | Required | Default |
+| --------------- | ------------------------------------------------------------------------ | -------- | ------- |
+| `DISCORD_TOKEN` | The Discord bot token.                                                   | Yes      | -       |
+| `LOG_LEVEL`     | The minimum log level (`DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`). | No       | `INFO`  |
 
 > [!IMPORTANT]
-> The bot requires a Discord bot token to run. You can create a new bot and obtain a token from the [Discord Developer Portal](https://discord.com/developers/applications).
->
+> You can obtain a Discord bot token from the [Discord Developer Portal](https://discord.com/developers/applications).
 > Your token should have the `bot` scope. Do not share your token with anyone!
 
 ## Development

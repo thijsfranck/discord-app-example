@@ -57,7 +57,7 @@ Your Discord bot token should be stored in a `.env` file in the project root dir
 DISCORD_TOKEN=your_token
 ```
 
-See the [Usage section of the README](README.md#usage) on how to obtain a Discord bot token.
+See the [configuration section of the README](README.md#configuration) on how to obtain a Discord bot token.
 
 ## Running the Bot
 
