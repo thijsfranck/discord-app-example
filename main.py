@@ -16,6 +16,8 @@ def main() -> None:
     Retrieves the Discord token from the `DISCORD_TOKEN` environment variable and attempts to start
     the client. If the token is missing or invalid, logs a critical message and exits.
 
+    The log level can be set using the `LOG_LEVEL` environment variable. The default is `INFO`.
+
     Note
     ----
     Let discord.py configure the root logger to ensure consistently formatted logs across the app.
@@ -25,11 +27,14 @@ def main() -> None:
     # Passing an empty token will raise a discord.LoginFailure exception.
     token = os.getenv("DISCORD_TOKEN", "")
 
+    log_level_name = os.getenv("LOG_LEVEL", "INFO")
+    log_level = logging.getLevelNamesMapping().get(log_level_name, logging.INFO)
+
     try:
         client.run(
             token=token,
+            log_level=log_level,
             root_logger=True,
-            log_level=logging.INFO,
         )
     except discord.LoginFailure:
         logging.critical(
