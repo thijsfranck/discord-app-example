@@ -21,6 +21,8 @@ ignore = [
     # Self and cls do not require annotations.
     "ANN101",
     "ANN102",
+    # Module level docstrings don't always make sense
+    "D104",
     # Pyright error codes are obnoxiously long. Ignore lint telling you to use them.
     "PGH003",
     # Documenting every file is a bit redundant for us.
