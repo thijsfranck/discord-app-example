@@ -103,7 +103,7 @@ In the pull request description, provide a brief overview of the changes and any
 
 The project includes automated checks to ensure the code meets the quality standards. These checks include:
 
-- All [pre-commit hooks](#pre-commit-hooks) must pass
+- All [pre-commit hooks](#automated-checks) must pass
 - Type checking with [Pyright](https://github.com/microsoft/pyright)
 - Unit tests with [pytest](https://docs.pytest.org/en/stable/)
 
