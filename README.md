@@ -4,7 +4,7 @@ This is a simple example of a Discord bot using the [discord.py](https://discord
 
 ## Documentation
 
-See the [documentation](https://discord-app-example.pages.dev/) for a detailed guide on how to use, maintain, and contribute to the project.
+See the [documentation](https://discord-app-example.pages.dev/) for a detailed guide on how to use, install, configure, and contribute to the application.
 
 ## License
 
