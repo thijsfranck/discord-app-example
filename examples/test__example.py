@@ -56,7 +56,8 @@ def test__sum_with_fixture(example_data: list[int]) -> None:
     ],
 )
 def test__sum_with_parameterization(
-    input_data: list[int], expected_output: int
+    input_data: list[int],
+    expected_output: int,
 ) -> None:
     """
     Example of a parameterized test case.

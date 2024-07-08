@@ -1,0 +1,25 @@
+{
+  "dictionaries": [
+    "custom-words"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "addWords": true,
+      "name": "custom-words",
+      "path": "./.cspell/custom-words.txt"
+    }
+  ],
+  "ignorePaths": [
+    ".gitignore",
+    "Dockerfile",
+    "LICENSE",
+    "**/*.json",
+    "**/*.toml",
+    "**/*.yaml",
+    "**/*.yml"
+  ],
+  "ignoreWords": [],
+  "import": [],
+  "version": "0.2",
+  "words": []
+}

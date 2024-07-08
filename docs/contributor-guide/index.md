@@ -1,6 +1,7 @@
 # Contributor Guide
 
-The contributor guide is intended for developers working on this project. It provides instructions on how to set up a new development environment, along with guidelines on version control, documentation, and testing.
+The contributor guide is intended for developers working on this project. It provides instructions on how to
+set up a new development environment, along with guidelines on version control, documentation, and testing.
 
 ## Contents
 

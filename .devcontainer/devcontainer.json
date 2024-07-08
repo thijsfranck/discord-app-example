@@ -1,52 +1,43 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-	"name": "Discord App Example",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/vscode/devcontainers/base:debian",
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
-		"ghcr.io/devcontainers/features/python:1": {
-			"version": "3.12",
-			"installTools": false
-		},
-		"ghcr.io/devcontainers-contrib/features/act:1": {},
-		"ghcr.io/devcontainers-contrib/features/poetry:2": {},
-		"ghcr.io/prulloac/devcontainer-features/commitizen:1": {}
-	},
-	"containerEnv": {
-		"POETRY_VIRTUALENVS_CREATE": "false"
-	},
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "bash .devcontainer/postcreate.sh",
-	// Configure tool-specific properties.
-	"customizations": {
-		"vscode": {
-			// Disable the autopep8 extension as it conflicts with Ruff.
-			"extensions": [
-				"charliermarsh.ruff",
-				"KnisterPeter.vscode-commitizen",
-				"yzhang.markdown-all-in-one",
-				"-ms-python.autopep8"
-			],
-			"settings": {
-				"editor.formatOnSave": true,
-				"editor.formatOnSaveMode": "file",
-				"python.analysis.typeCheckingMode": "basic",
-				"python.testing.pytestArgs": [
-					"."
-				],
-				"python.testing.unittestEnabled": false,
-				"python.testing.pytestEnabled": true,
-				"[python]": {
-					"editor.defaultFormatter": "charliermarsh.ruff"
-				}
-			}
-		}
-	}
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+  "containerEnv": {
+    "POETRY_VIRTUALENVS_CREATE": "false"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "charliermarsh.ruff",
+        "DavidAnson.vscode-markdownlint",
+        "KnisterPeter.vscode-commitizen",
+        "streetsidesoftware.code-spell-checker",
+        "tamasfe.even-better-toml",
+        "-ms-python.autopep8"
+      ],
+      "settings": {
+        "[python]": {
+          "editor.defaultFormatter": "charliermarsh.ruff"
+        },
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file",
+        "python.analysis.typeCheckingMode": "basic",
+        "python.testing.pytestArgs": [
+          "."
+        ],
+        "python.testing.pytestEnabled": true,
+        "python.testing.unittestEnabled": false
+      }
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/act:1": {},
+    "ghcr.io/devcontainers-contrib/features/poetry:2": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/python:1": {
+      "installTools": false,
+      "version": "3.12"
+    },
+    "ghcr.io/prulloac/devcontainer-features/commitizen:1": {}
+  },
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:debian",
+  "name": "Discord App Example",
+  "postCreateCommand": "bash .devcontainer/postcreate.sh"
 }

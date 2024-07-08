@@ -1,0 +1,9 @@
+autouse
+codespace
+conftest
+docstrings
+dotenv
+numpy
+pyright
+pytest
+thijsfranck

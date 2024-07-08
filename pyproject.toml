@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-discord-py = {extras = ["voice"], version = "^2.4.0"}
+discord-py = { extras = ["voice"], version = "^2.4.0" }
 python-dotenv = "^1.0.1"
 
 [tool.poetry.dev-dependencies]
@@ -17,8 +17,12 @@ mkdocs-material = "^9.5.28"
 pre-commit = "^3.7.1"
 pytest = "^8.2.2"
 ruff = "^0.5.1"
-
 pymdown-extensions = "^10.8.1"
+
+[tool.pyright]
+typeCheckingMode = "basic"
+pythonVersion = "3.12"
+reportUnnecessaryTypeIgnoreComment = "error"
 
 [tool.ruff]
 select = ["ALL"]
@@ -42,13 +46,12 @@ ignore = [
 line-length = 100
 target-version = "py312"
 
+[tool.ruff.per-file-ignores]
+"**/test__*.py" = ["S101", "PLR2004"]
+"examples/**/*.py" = ["INP001"]
+
 [tool.ruff.pydocstyle]
 convention = "numpy"
-
-[tool.pyright]
-typeCheckingMode = "basic"
-pythonVersion = "3.12"
-reportUnnecessaryTypeIgnoreComment = "error"
 
 [build-system]
 requires = ["poetry-core"]
