@@ -83,3 +83,14 @@ poetry run python main.py
 ```
 
 The bot should now be online and ready to respond to commands in your Discord server.
+
+## Running the Documentation Locally
+
+To view the documentation locally, you can use the following command:
+
+```bash
+poetry run mkdocs serve
+```
+
+Open your browser and navigate to [`http://localhost:8000`](http://localhost:8000) to view the documentation.
+The changes you make to the documentation will be automatically reflected in the browser.

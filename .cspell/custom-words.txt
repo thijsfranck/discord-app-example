@@ -3,6 +3,7 @@ codespace
 conftest
 docstrings
 dotenv
+mkdocs
 numpy
 pyright
 pytest
