@@ -11,7 +11,7 @@ docker run ghcr.io/thijsfranck/discord-app-example:latest
 ```
 
 > [!NOTE]
-> Previous versions of the image are available on the [GitHub Container Registry](https://github.com/thijsfranck?tab=packages&repo_name=discord-app-example).
+> Previous versions of the image are available on the [GitHub Container Registry](https://github.com/thijsfranck/discord-app-example/pkgs/container/discord-app-example).
 
 ## Configuration
 
