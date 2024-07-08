@@ -29,7 +29,7 @@ repos:
         name: Trim trailing whitespace
         args: [--markdown-linebreak-ext=md]
 
-  - repo: https://github.com/charliermarsh/ruff-pre-commit
+  - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.5.1
     hooks:
       - id: ruff
@@ -39,7 +39,7 @@ repos:
         name: Run Python formatter
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.40.0
+    rev: v0.41.0
     hooks:
       - id: markdownlint
         name: Check for Markdown linting errors
