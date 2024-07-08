@@ -6,3 +6,5 @@ The contributor guide is intended for developers working on this project. It pro
 
 - [Development Environment](./development-environment.md): How to set up your development environment.
 - [Version Control](./version-control.md): How to manage changes using version control.
+- [Documentation](./documentation.md): How to write good documentation.
+- [Testing](./testing.md): How to test the application.
