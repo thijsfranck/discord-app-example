@@ -740,7 +740,8 @@
 </code></pre></div>
 <p>Replace <code>&lt;YOUR_BRANCH_NAME&gt;</code> with a short, descriptive name for your branch. For example, <code>add-uptime-command</code>.</p>
 <h2 id="commits">Commits</h2>
-<p>Commits should follow the <a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a> specification. This helps maintain a clean and structured commit history.</p>
+<p>Commits should follow the <a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a> specification.
+This helps maintain a clean and structured commit history.</p>
 <div class="admonition example">
 <p class="admonition-title">Conventional Commit Format</p>
 <p>Here's an example of a good commit message:</p>
@@ -751,11 +752,14 @@ Add a new command to display the bot&#39;s uptime.
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Use Commitizen</p>
-<p>The development container includes <a href="https://commitizen-tools.github.io/commitizen/">Commitizen</a> to help you write conventional commit messages. Run <code>cz commit</code> to create a commit message interactively.</p>
+<p>The development container includes <a href="https://commitizen-tools.github.io/commitizen/">Commitizen</a> to help you
+write conventional commit messages. Run <code>cz commit</code> to create a commit message interactively.</p>
 </div>
-<p>Try to keep your commits focused on a single task. If you need to make multiple changes, create separate commits for each change.</p>
+<p>Try to keep your commits focused on a single task. If you need to make multiple changes, create separate commits
+for each change.</p>
 <h3 id="automated-checks">Automated Checks</h3>
-<p>The project includes pre-commit hooks to ensure your code meets the quality standards. These hooks run automatically before each commit.</p>
+<p>The project includes pre-commit hooks to ensure your code meets the quality standards. These hooks run automatically
+before each commit.</p>
 <p>The pre-commit hooks include:</p>
 <ul>
 <li>Linting and formatting with <a href="https://docs.astral.sh/ruff/">Ruff</a></li>
@@ -763,7 +767,8 @@ Add a new command to display the bot&#39;s uptime.
 </ul>
 <div class="admonition question">
 <p class="admonition-title">What if the pre-commit hooks fail?</p>
-<p>If the pre-commit hooks fail, you will need to address the issues before committing your changes. Follow the instructions provided by the pre-commit hooks to identify and fix the issues.</p>
+<p>If the pre-commit hooks fail, you will need to address the issues before committing your changes. Follow the
+instructions provided by the pre-commit hooks to identify and fix the issues.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Running Pre-commit Hooks Manually</p>
@@ -771,16 +776,19 @@ Add a new command to display the bot&#39;s uptime.
 <div class="highlight"><pre><span></span><code>poetry<span class="w"> </span>run<span class="w"> </span>pre-commit
 </code></pre></div>
 </div>
-<p>The pre-commit hooks are intended to help us keep the codebase maintainable. If there are rules that you believe are too strict, please discuss them with the team.</p>
+<p>The pre-commit hooks are intended to help us keep the codebase maintainable. If there are rules that you believe
+are too strict, please discuss them with the team.</p>
 <h2 id="pull-requests">Pull Requests</h2>
-<p>Once you have completed your changes, it's time to create a pull request. A pull request allows your changes to be reviewed and merged into the <code>master</code> branch.</p>
+<p>Once you have completed your changes, it's time to create a pull request. A pull request allows your changes to
+be reviewed and merged into the <code>master</code> branch.</p>
 <p>Before creating a pull request, ensure your branch is up to date with the latest changes from the <code>master</code> branch:</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull<span class="w"> </span>master
 </code></pre></div>
 <p>Next, push your changes to the repository:</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>push
 </code></pre></div>
-<p>Finally, <a href="https://github.com/thijsfranck/discord-app-example/compare">create a pull request on GitHub</a>. Select your branch as the source and the <code>master</code> branch as the base.</p>
+<p>Finally, <a href="https://github.com/thijsfranck/discord-app-example/compare">create a pull request on GitHub</a>. Select
+your branch as the source and the <code>master</code> branch as the base.</p>
 <p>In the pull request description, provide a brief overview of the changes and any relevant information for reviewers.</p>
 <div class="admonition example">
 <p class="admonition-title">Pull Request Description</p>
@@ -809,18 +817,20 @@ This pull request adds a new uptime command to display the bot&#39;s uptime.
 </ul>
 <div class="admonition question">
 <p class="admonition-title">What if the automated checks fail?</p>
-<p>If any of the automated checks fail, please address the issues before requesting a review. Feedback from the automated checks should be available in the pull request checks tab.</p>
+<p>If any of the automated checks fail, please address the issues before requesting a review. Feedback from the
+automated checks should be available in the pull request checks tab.</p>
 </div>
 <h3 id="code-review">Code Review</h3>
-<p>All pull requests should be reviewed by at least one other team member before merging. The reviewer will provide feedback and suggestions for improvement.</p>
+<p>All pull requests should be reviewed by at least one other team member before merging. The reviewer will provide
+feedback and suggestions for improvement.</p>
 <div class="admonition tip">
 <p class="admonition-title">Requesting a Review</p>
 <p>Request a review from a team member by assigning them to the pull request.</p>
 </div>
 <p>Once the reviewer approves the pull request, you can merge it into the <code>master</code> branch.</p>
 <h4 id="giving-feedback">Giving Feedback</h4>
-<p>When providing feedback on a pull request, be constructive and specific. Point out areas for improvement and suggest possible solutions.
-If you have any questions or concerns, don't hesitate to ask the author for clarification.</p>
+<p>When providing feedback on a pull request, be constructive and specific. Point out areas for improvement and suggest
+possible solutions. If you have any questions or concerns, don't hesitate to ask the author for clarification.</p>
 <p>A code review should focus on the following aspects:</p>
 <ul>
 <li>Correctness and functionality</li>
@@ -836,7 +846,8 @@ If you have any questions or concerns, don't hesitate to ask the author for clar
 - The tests cover most of the functionality, but we are missing a test case for edge case X. Could you add a test for that?
 </code></pre></div>
 </div>
-<p>Always be respectful and considerate when giving feedback. Remember that the goal is to improve the code and help the author grow as a developer.</p>
+<p>Always be respectful and considerate when giving feedback. Remember that the goal is to improve the code and help
+the author grow as a developer.</p>
 <div class="admonition success">
 <p class="admonition-title">Be Positive</p>
 <p>Don't forget to acknowledge the positive aspects of the contribution as well!</p>
@@ -854,7 +865,8 @@ Semantic version numbers consist of three parts: <code>major.minor.patch</code>.
 </ul>
 <div class="admonition question">
 <p class="admonition-title">What is a breaking change?</p>
-<p>A breaking change requires users to change the way they use the software. Examples include removal of features or backwards-incompatible API changes.</p>
+<p>A breaking change requires users to change the way they use the software. Examples include removal of features
+or backwards-incompatible API changes.</p>
 </div>
 <div class="admonition example">
 <p class="admonition-title">Semantic Versioning</p>
@@ -866,8 +878,10 @@ Semantic version numbers consist of three parts: <code>major.minor.patch</code>.
 </ul>
 </div>
 <h3 id="github-actions">GitHub Actions</h3>
-<p>A GitHub actions workflow will automatically build and publish a new version of the Docker image when a new tag is created.</p>
-<p>The updated image will be available on the <a href="https://github.com/thijsfranck/discord-app-example/pkgs/container/discord-app-example">GitHub Container Registry</a> with both the release tag and the <code>latest</code> tag.</p>
+<p>A GitHub actions workflow will automatically build and publish a new version of the Docker image when a new tag
+is created.</p>
+<p>The updated image will be available on the <a href="https://github.com/thijsfranck/discord-app-example/pkgs/container/discord-app-example">GitHub Container Registry</a>
+with both the release tag and the <code>latest</code> tag.</p>
 <p>The GitHub actions workflow also updates the documentation to reflect the new release.</p>
 
 
