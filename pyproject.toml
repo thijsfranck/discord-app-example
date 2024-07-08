@@ -11,9 +11,14 @@ discord-py = {extras = ["voice"], version = "^2.4.0"}
 python-dotenv = "^1.0.1"
 
 [tool.poetry.dev-dependencies]
+mike = "^2.1.2"
+mkdocs = "^1.6.0"
+mkdocs-material = "^9.5.28"
 pre-commit = "^3.7.1"
 pytest = "^8.2.2"
 ruff = "^0.5.1"
+
+pymdown-extensions = "^10.8.1"
 
 [tool.ruff]
 select = ["ALL"]

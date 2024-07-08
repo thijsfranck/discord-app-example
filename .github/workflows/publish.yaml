@@ -5,9 +5,7 @@ on:
     tags:
       - v*.*.*
 
-permissions:
-  contents: read
-  packages: write
+permissions: write-all
 
 jobs:
   publish:
@@ -35,6 +33,7 @@ jobs:
 
       - name: Build the Application
         run: poetry build -f wheel
+        shell: bash
 
       - name: Build and Publish the Docker Image
         uses: docker/build-push-action@v6
@@ -42,3 +41,10 @@ jobs:
           context: .
           push: true
           tags: ghcr.io/thijsfranck/discord-app-example:${{ github.ref_name }},ghcr.io/thijsfranck/discord-app-example:latest
+
+      - name: Setup Git User
+        uses: fregante/setup-git-user@v2.0.1
+
+      - name: Publish Documentation
+        run: poetry run mike deploy -b public-docs --push --update-aliases ${{ github.ref_name }} latest
+        shell: bash

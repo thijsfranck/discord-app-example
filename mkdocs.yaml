@@ -1,0 +1,44 @@
+site_name: Discord App Example
+copyright: Made with 🍵 by Thijs Franck
+
+theme:
+  name: material
+  search: true
+  features:
+    - content.code.copy
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.sections
+
+nav:
+  - Maintainer Guide:
+    - maintainer-guide/index.md
+    - Installation: maintainer-guide/installation.md
+    - Configuration: maintainer-guide/configuration.md
+  - Contributor Guide:
+    - contributor-guide/index.md
+    - Development Environment: contributor-guide/development-environment.md
+    - Version Control: contributor-guide/version-control.md
+    - Documentation: contributor-guide/documentation.md
+    - Testing: contributor-guide/testing.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed
+
+plugins:
+  - mike
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/thijsfranck/discord-app-example
+  version:
+    alias: true
+    provider: mike
