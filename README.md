@@ -7,7 +7,7 @@ This is a simple example of a Discord bot using the [discord.py](https://discord
 The application is distributed as a [Docker](https://www.docker.com/) image. Run the following command to install the latest version:
 
 ```bash
-docker run ghcr.io/thijsfranck/discord-app-example:latest
+docker run -e DISCORD_TOKEN=<YOUR_TOKEN> ghcr.io/thijsfranck/discord-app-example:latest
 ```
 
 > [!NOTE]
