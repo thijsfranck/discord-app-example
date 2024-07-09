@@ -1,7 +1,7 @@
 """
 The `test__example` module contains example tests for a Python project.
 
-For guidelines on writing good tests, see the contribution guide.
+For guidelines on writing good tests, see the contributor guide.
 """
 
 import pytest
