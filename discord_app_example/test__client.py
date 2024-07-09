@@ -1,7 +1,19 @@
 import pytest
+from discord import Intents
 from pytest_mock import MockerFixture
 
-from .client import logger, on_ready
+from .client import client, logger, on_ready
+
+
+def test__client_has_expected_permissions() -> None:
+    """
+    Test whether the client has the expected permissions.
+
+    Asserts
+    -------
+    - The client has the default intents.
+    """
+    assert client.intents == Intents.default()
 
 
 @pytest.mark.asyncio()
