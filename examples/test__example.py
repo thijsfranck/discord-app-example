@@ -37,7 +37,7 @@ def test__sum_with_fixture(example_data: list[int]) -> None:
 
     Parameters
     ----------
-    example_data : list[int]
+    example_data: list[int]
         A list of integers.
 
     Asserts
@@ -64,9 +64,9 @@ def test__sum_with_parameterization(
 
     Parameters
     ----------
-    input_data : list[int]
+    input_data: list[int]
         A list of integers to sum.
-    expected_output : int
+    expected_output: int
         The expected sum of the input list.
 
     Asserts
