@@ -25,7 +25,10 @@ pythonVersion = "3.12"
 reportUnnecessaryTypeIgnoreComment = "error"
 
 [tool.ruff]
-select = ["ALL"]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
 ignore = [
     # Self and cls do not require annotations.
     "ANN101",
@@ -43,14 +46,13 @@ ignore = [
     # We do not need cryptographically secure random functions.
     "S311",
 ]
-line-length = 100
-target-version = "py312"
+select = ["ALL"]
 
-[tool.ruff.per-file-ignores]
+[tool.ruff.lint.per-file-ignores]
 "**/test__*.py" = ["S101", "PLR2004"]
 "examples/**/*.py" = ["INP001"]
 
-[tool.ruff.pydocstyle]
+[tool.ruff.lint.pydocstyle]
 convention = "numpy"
 
 [build-system]
