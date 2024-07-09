@@ -37,7 +37,16 @@
     },
     "ghcr.io/prulloac/devcontainer-features/commitizen:1": {}
   },
+  "forwardPorts": [
+    8000
+  ],
   "image": "mcr.microsoft.com/vscode/devcontainers/base:debian",
   "name": "Discord App Example",
+  "portsAttributes": {
+    "8000": {
+      "label": "MkDocs",
+      "onAutoForward": "notify"
+    }
+  },
   "postCreateCommand": "bash .devcontainer/postcreate.sh"
 }
