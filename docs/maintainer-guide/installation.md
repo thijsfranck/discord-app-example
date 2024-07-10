@@ -17,12 +17,12 @@ Replace `<YOUR_TOKEN>` with your Discord bot token.
 The application will start and connect to Discord using the provided token. You can now interact with the bot
 in your Discord server.
 
-!!! QUESTION "Where do I find my Discord bot token?"
+??? QUESTION "Where do I find my Discord bot token?"
     See the configuration section for instructions on [how to obtain a Discord bot token](./configuration.md#discord_token).
 
-!!! QUESTION "What other options are available?"
+??? QUESTION "What other options are available?"
     The application supports additional environment variables that you can use to customize its behavior. Refer
     to the [configuration](configuration.md) section for a list of available options.
 
-!!! QUESTION "Where can I find previous versions of the image?"
+??? QUESTION "Where can I find previous versions of the image?"
     Previous versions of the image are available on the [GitHub Container Registry](https://github.com/thijsfranck/discord-app-example/pkgs/container/discord-app-example).

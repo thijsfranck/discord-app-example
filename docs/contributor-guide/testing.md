@@ -7,9 +7,9 @@ and accelerate our development pace.
 
 Test modules should be located in the same directory as the module they cover. Test modules should be named
 `test__*.py` (e.g.,`test__example.py`). Individual test methods within those modules should be prefixed with
-`test__` (e.g., `test__my_function`). See the example below:
+`test__` (e.g., `test__my_function`).
 
-!!! EXAMPLE "Test Module Structure"
+??? EXAMPLE "Test Module Structure"
     ```plaintext
     project_root/
     ├── discord_app_example/
@@ -36,7 +36,7 @@ tests for a specific module by specifying the module name:
 poetry run pytest discord_app_example/test__example.py
 ```
 
-!!! TIP "Running Tests in your IDE"
+??? TIP "Running Tests in your IDE"
     Most modern IDEs have built-in support for running tests. You can run tests directly from your IDE, which
     can be more convenient than running them from the command line.
 
@@ -53,7 +53,7 @@ Unit tests should cover the following aspects of your code:
 - Correctness of output (or outcome) given a valid input
 - Error handling
 
-!!! TIP "Edge Cases"
+??? TIP "Consider Edge Cases"
     When writing tests, consider edge cases such as invalid inputs and unexpected behavior. These are often the
     areas where bugs are most likely to occur.
 
@@ -74,10 +74,10 @@ When writing tests, follow these guidelines:
 - Aim for one `assert` statement per test.
 - Use [fixtures](https://docs.pytest.org/en/latest/explanation/fixtures.html) to set up common data or resources.
 
-!!! EXAMPLE "Example Tests"
+??? EXAMPLE "Example Tests"
     The `examples` folder includes sample tests that you can use as a base for your own test.
 
-!!! TIP "Global Fixtures"
+??? TIP "Global Fixtures"
     The `conftest.py` file at the root of the project can be used to define fixtures for use across all test modules.
 
 ## Unit Testing and Type Annotations
@@ -88,7 +88,7 @@ need to write, particularly those related to input validation.
 
 For instance, consider the following function without type annotations:
 
-!!! EXAMPLE "Function Without Type Annotations"
+???+ EXAMPLE "Function Without Type Annotations"
     ```python
     def add(a, b):
         return a + b
@@ -97,7 +97,7 @@ For instance, consider the following function without type annotations:
 Without type annotations, you might write multiple tests to ensure that the function behaves correctly with different
 types of input, like strings, integers, or floats. But with type annotations:
 
-!!! EXAMPLE "Function With Type Annotations"
+???+ EXAMPLE "Function With Type Annotations"
     ```python
     def add(a: int, b: int) -> int:
         return a + b

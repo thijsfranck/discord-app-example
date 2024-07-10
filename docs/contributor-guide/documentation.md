@@ -18,24 +18,9 @@ methods with complex logic should also be documented for clarity.
 This project uses numpy-style docstrings. Refer to the [style guide](https://numpydoc.readthedocs.io/en/latest/format.html)
 for the full specification and detailed examples.
 
-!!! TIP "Examples"
-    There are also some [examples](#examples) further down this page to help you get started.
-
-## Type Annotations
-
-Python type annotations are strongly encouraged to improve code readability and maintainability. Use type annotations
-for all parameters and return values, as well as class attributes.
-
-!!! QUESTION "What are type annotations?"
-    Type annotations are a way to specify the expected types of variables, function parameters, and return values
-    in Python code. They are used to improve code readability and catch type-related errors early. Refer to the
-    [official documentation](https://docs.python.org/3/library/typing.html) for more information.
-
-## Examples
-
 Here are some examples of how to write good documentation for functions and classes:
 
-!!! EXAMPLE "Function Documentation"
+??? EXAMPLE "Function Documentation"
     ```python
     def example_function(param1: int, param2: str):
         """
@@ -69,7 +54,7 @@ Here are some examples of how to write good documentation for functions and clas
         ...
     ```
 
-!!! EXAMPLE "Class Documentation"
+??? EXAMPLE "Class Documentation"
     ```python
     class Example:
         """
@@ -82,3 +67,13 @@ Here are some examples of how to write good documentation for functions and clas
         """
         ...
     ```
+
+## Type Annotations
+
+Python type annotations are strongly encouraged to improve code readability and maintainability. Use type annotations
+for all parameters and return values, as well as class attributes.
+
+??? QUESTION "What are type annotations?"
+    Type annotations are a way to specify the expected types of variables, function parameters, and return values
+    in Python code. They are used to improve code readability and catch type-related errors early. Refer to the
+    [official documentation](https://docs.python.org/3/library/typing.html) for more information.

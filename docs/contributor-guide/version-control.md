@@ -25,7 +25,10 @@ Replace `<YOUR_BRANCH_NAME>` with a short, descriptive name for your branch. For
 Commits should follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification.
 This helps maintain a clean and structured commit history.
 
-!!! EXAMPLE "Conventional Commit Format"
+Try to keep your commits focused on a single task. If you need to make multiple changes, create separate commits
+for each change.
+
+??? EXAMPLE "Conventional Commit Format"
     Here's an example of a good commit message:
 
     ```plaintext
@@ -34,12 +37,13 @@ This helps maintain a clean and structured commit history.
     Add a new command to display the bot's uptime.
     ```
 
-!!! TIP "Use Commitizen"
+??? TIP "Use Commitizen"
     The development container includes [Commitizen](https://commitizen-tools.github.io/commitizen/) to help you
-    write conventional commit messages. Run `cz commit` to create a commit message interactively.
+    write conventional commit messages. Run the following command to create a commit message interactively:
 
-Try to keep your commits focused on a single task. If you need to make multiple changes, create separate commits
-for each change.
+    ```bash
+    cz commit
+    ```
 
 ### Automated Checks
 
@@ -51,11 +55,11 @@ The pre-commit hooks include:
 - Linting and formatting with [Ruff](https://docs.astral.sh/ruff/)
 - Commit message validation with [Commitlint](https://commitlint.js.org)
 
-!!! QUESTION "What if the pre-commit hooks fail?"
+??? QUESTION "What if the pre-commit hooks fail?"
     If the pre-commit hooks fail, you will need to address the issues before committing your changes. Follow the
     instructions provided by the pre-commit hooks to identify and fix the issues.
 
-!!! TIP "Running Pre-commit Hooks Manually"
+??? QUESTION "How do I run the pre-commit hooks manually?"
     Pre-commit hooks can also be run manually using the following command:
 
     ```bash
@@ -87,7 +91,7 @@ your branch as the source and the `master` branch as the base.
 
 In the pull request description, provide a brief overview of the changes and any relevant information for reviewers.
 
-!!! EXAMPLE "Pull Request Description"
+??? EXAMPLE "Pull Request Description"
     Here's an example of a good pull request description:
 
     ```plaintext
@@ -114,7 +118,7 @@ The project includes automated checks to ensure the code meets the quality stand
 - Type checking with [Pyright](https://github.com/microsoft/pyright)
 - Unit tests with [pytest](https://docs.pytest.org/en/stable/)
 
-!!! QUESTION "What if the automated checks fail?"
+??? QUESTION "What if the automated checks fail?"
     If any of the automated checks fail, please address the issues before requesting a review. Feedback from the
     automated checks should be available in the pull request checks tab.
 
@@ -123,10 +127,11 @@ The project includes automated checks to ensure the code meets the quality stand
 All pull requests should be reviewed by at least one other team member before merging. The reviewer will provide
 feedback and suggestions for improvement.
 
-!!! TIP "Requesting a Review"
-    Request a review from a team member by assigning them to the pull request.
-
 Once the reviewer approves the pull request, you can merge it into the `master` branch.
+
+??? QUESTION "How do I request a review?"
+    Request a review from a team member by [assigning them as a reviewer](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review)
+    to your pull request.
 
 #### Giving Feedback
 
@@ -139,7 +144,7 @@ A code review should focus on the following aspects:
 - Code quality and readability
 - Adherence to the project guidelines
 
-!!! EXAMPLE "Good Code Review Feedback"
+??? EXAMPLE "Good Code Review Feedback"
     Here are some examples of good code review feedback:
 
     ```plaintext
@@ -170,11 +175,11 @@ To calculate the next version number, follow these guidelines:
 - For *new features* or *significant improvements*, increment the minor version.
 - For **breaking changes**, increment the major version.
 
-!!! QUESTION "What is a breaking change?"
+??? QUESTION "What is a breaking change?"
     A breaking change requires users to change the way they use the software. Examples include removal of features
     or backwards-incompatible API changes.
 
-!!! EXAMPLE "Semantic Versioning"
+??? EXAMPLE "Semantic Versioning"
     Here are some examples of version increments:
 
     - Bug fixes: `1.0.0` -> `1.0.1`

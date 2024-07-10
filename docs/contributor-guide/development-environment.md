@@ -30,7 +30,7 @@ To get started, refer to the setup guide for your IDE:
 - [Visual Studio Code](https://code.visualstudio.com/docs/devcontainers/tutorial)
 - [PyCharm](https://www.jetbrains.com/help/pycharm/connect-to-devcontainer.html)
 
-!!! TIP "Cloud Development Environment"
+??? TIP "Cloud Development Environment"
     Alternatively, you can use a [GitHub Codespace](https://docs.github.com/en/codespaces/getting-started/quickstart)
     to set up your development environment in the cloud.
 
@@ -65,11 +65,11 @@ DISCORD_TOKEN=<YOUR_TOKEN>
 
 Replace `<YOUR_TOKEN>` with your Discord bot token.
 
-!!! QUESTION "Where do I find my Discord bot token?"
-    See the maintainer guide for instructions on [how to obtain a Discord bot token](../maintainer-guide/configuration.md#discord_token).
-
 !!! DANGER "Security Warning"
     Do not commit your `.env` file to version control or share your token with anyone!
+
+??? QUESTION "Where do I find my Discord bot token?"
+    See the maintainer guide for instructions on [how to obtain a Discord bot token](../maintainer-guide/configuration.md#discord_token).
 
 The example above is the minimum required configuration to run the bot. For more configuration options, refer
 to the [Configuration](../maintainer-guide/configuration.md) section.
