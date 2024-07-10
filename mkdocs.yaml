@@ -69,3 +69,7 @@ extra:
   version:
     alias: true
     provider: mike
+
+extra_css:
+  - stylesheets/tabs.css
+  - stylesheets/table.css
