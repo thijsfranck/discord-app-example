@@ -704,9 +704,9 @@ and accelerate our development pace.</p>
 <h2 id="structure">Structure<a class="headerlink" href="#structure" title="Permanent link">&para;</a></h2>
 <p>Test modules should be located in the same directory as the module they cover. Test modules should be named
 <code>test__*.py</code> (e.g.,<code>test__example.py</code>). Individual test methods within those modules should be prefixed with
-<code>test__</code> (e.g., <code>test__my_function</code>). See the example below:</p>
-<div class="admonition example">
-<p class="admonition-title">Test Module Structure</p>
+<code>test__</code> (e.g., <code>test__my_function</code>).</p>
+<details class="example">
+<summary>Test Module Structure</summary>
 <div class="highlight"><pre><span></span><code>project_root/
 ├── discord_app_example/
 │   ├── __init__.py
@@ -715,7 +715,7 @@ and accelerate our development pace.</p>
 ├── conftest.py
 └── ...
 </code></pre></div>
-</div>
+</details>
 <h2 id="running-tests">Running Tests<a class="headerlink" href="#running-tests" title="Permanent link">&para;</a></h2>
 <p>We use the <a href="https://docs.pytest.org"><code>pytest</code></a> framework for writing and running our tests. To run the tests,
 use the following command from the root of the project:</p>
@@ -725,8 +725,8 @@ use the following command from the root of the project:</p>
 tests for a specific module by specifying the module name:</p>
 <div class="highlight"><pre><span></span><code>poetry<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </span>discord_app_example/test__example.py
 </code></pre></div>
-<div class="admonition tip">
-<p class="admonition-title">Running Tests in your IDE</p>
+<details class="tip">
+<summary>Running Tests in your IDE</summary>
 <p>Most modern IDEs have built-in support for running tests. You can run tests directly from your IDE, which
 can be more convenient than running them from the command line.</p>
 <ul>
@@ -734,7 +734,7 @@ can be more convenient than running them from the command line.</p>
 <li><a href="https://www.jetbrains.com/help/pycharm/pytest.html">PyCharm</a></li>
 </ul>
 <p>The development container is pre-configured for using <code>pytest</code> in Visual Studio Code.</p>
-</div>
+</details>
 <h2 id="what-to-test">What to Test<a class="headerlink" href="#what-to-test" title="Permanent link">&para;</a></h2>
 <p>Unit tests should cover the following aspects of your code:</p>
 <ul>
@@ -742,11 +742,11 @@ can be more convenient than running them from the command line.</p>
 <li>Correctness of output (or outcome) given a valid input</li>
 <li>Error handling</li>
 </ul>
-<div class="admonition tip">
-<p class="admonition-title">Edge Cases</p>
+<details class="tip">
+<summary>Consider Edge Cases</summary>
 <p>When writing tests, consider edge cases such as invalid inputs and unexpected behavior. These are often the
 areas where bugs are most likely to occur.</p>
-</div>
+</details>
 <p>Some parts of the code may be more critical than others. Focus on writing tests for the most critical parts of
 the codebase, such as complex algorithms, core functionality or user-facing features.</p>
 <h2 id="writing-tests">Writing Tests<a class="headerlink" href="#writing-tests" title="Permanent link">&para;</a></h2>
@@ -761,33 +761,33 @@ are run.</p>
 <li>Aim for one <code>assert</code> statement per test.</li>
 <li>Use <a href="https://docs.pytest.org/en/latest/explanation/fixtures.html">fixtures</a> to set up common data or resources.</li>
 </ul>
-<div class="admonition example">
-<p class="admonition-title">Example Tests</p>
+<details class="example">
+<summary>Example Tests</summary>
 <p>The <code>examples</code> folder includes sample tests that you can use as a base for your own test.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Global Fixtures</p>
+</details>
+<details class="tip">
+<summary>Global Fixtures</summary>
 <p>The <code>conftest.py</code> file at the root of the project can be used to define fixtures for use across all test modules.</p>
-</div>
+</details>
 <h2 id="unit-testing-and-type-annotations">Unit Testing and Type Annotations<a class="headerlink" href="#unit-testing-and-type-annotations" title="Permanent link">&para;</a></h2>
 <p>You can reduce the need for unit tests by indicating the expected types of input arguments and return values as
 type annotations. While they don't replace unit tests, type annotations can reduce the number of tests you might
 need to write, particularly those related to input validation.</p>
 <p>For instance, consider the following function without type annotations:</p>
-<div class="admonition example">
-<p class="admonition-title">Function Without Type Annotations</p>
+<details class="example" open="open">
+<summary>Function Without Type Annotations</summary>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </code></pre></div>
-</div>
+</details>
 <p>Without type annotations, you might write multiple tests to ensure that the function behaves correctly with different
 types of input, like strings, integers, or floats. But with type annotations:</p>
-<div class="admonition example">
-<p class="admonition-title">Function With Type Annotations</p>
+<details class="example" open="open">
+<summary>Function With Type Annotations</summary>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
     <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 </code></pre></div>
-</div>
+</details>
 <p>The function's expected behavior is clearer. You know that both <code>a</code> and <code>b</code> should be integers, and the return
 value will also be an integer. With these type annotations in place, there's less need to write unit tests checking
 for behaviors with non-integer inputs since the static type checker can catch those mistakes for you.</p>

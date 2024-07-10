@@ -556,15 +556,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Examples
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -655,15 +646,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Examples
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -696,23 +678,9 @@ methods with complex logic should also be documented for clarity.</p>
 <h2 id="docstring-format">Docstring Format<a class="headerlink" href="#docstring-format" title="Permanent link">&para;</a></h2>
 <p>This project uses numpy-style docstrings. Refer to the <a href="https://numpydoc.readthedocs.io/en/latest/format.html">style guide</a>
 for the full specification and detailed examples.</p>
-<div class="admonition tip">
-<p class="admonition-title">Examples</p>
-<p>There are also some <a href="#examples">examples</a> further down this page to help you get started.</p>
-</div>
-<h2 id="type-annotations">Type Annotations<a class="headerlink" href="#type-annotations" title="Permanent link">&para;</a></h2>
-<p>Python type annotations are strongly encouraged to improve code readability and maintainability. Use type annotations
-for all parameters and return values, as well as class attributes.</p>
-<div class="admonition question">
-<p class="admonition-title">What are type annotations?</p>
-<p>Type annotations are a way to specify the expected types of variables, function parameters, and return values
-in Python code. They are used to improve code readability and catch type-related errors early. Refer to the
-<a href="https://docs.python.org/3/library/typing.html">official documentation</a> for more information.</p>
-</div>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <p>Here are some examples of how to write good documentation for functions and classes:</p>
-<div class="admonition example">
-<p class="admonition-title">Function Documentation</p>
+<details class="example">
+<summary>Function Documentation</summary>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">example_function</span><span class="p">(</span><span class="n">param1</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">param2</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    One-line summary of the function.</span>
@@ -744,9 +712,9 @@ in Python code. They are used to improve code readability and catch type-related
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="o">...</span>
 </code></pre></div>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Class Documentation</p>
+</details>
+<details class="example">
+<summary>Class Documentation</summary>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Example</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Class-level docstring describing the class.</span>
@@ -758,7 +726,16 @@ in Python code. They are used to improve code readability and catch type-related
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="o">...</span>
 </code></pre></div>
-</div>
+</details>
+<h2 id="type-annotations">Type Annotations<a class="headerlink" href="#type-annotations" title="Permanent link">&para;</a></h2>
+<p>Python type annotations are strongly encouraged to improve code readability and maintainability. Use type annotations
+for all parameters and return values, as well as class attributes.</p>
+<details class="question">
+<summary>What are type annotations?</summary>
+<p>Type annotations are a way to specify the expected types of variables, function parameters, and return values
+in Python code. They are used to improve code readability and catch type-related errors early. Refer to the
+<a href="https://docs.python.org/3/library/typing.html">official documentation</a> for more information.</p>
+</details>
 
 
 

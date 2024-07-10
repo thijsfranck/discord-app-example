@@ -770,11 +770,11 @@ environment.</p>
 <li><a href="https://code.visualstudio.com/docs/devcontainers/tutorial">Visual Studio Code</a></li>
 <li><a href="https://www.jetbrains.com/help/pycharm/connect-to-devcontainer.html">PyCharm</a></li>
 </ul>
-<div class="admonition tip">
-<p class="admonition-title">Cloud Development Environment</p>
+<details class="tip">
+<summary>Cloud Development Environment</summary>
 <p>Alternatively, you can use a <a href="https://docs.github.com/en/codespaces/getting-started/quickstart">GitHub Codespace</a>
 to set up your development environment in the cloud.</p>
-</div>
+</details>
 <h3 id="manual-setup">Manual Setup<a class="headerlink" href="#manual-setup" title="Permanent link">&para;</a></h3>
 <p>If you prefer to set up the development environment manually, follow the steps below.</p>
 <div class="admonition note">
@@ -794,14 +794,14 @@ content:</p>
 <div class="highlight"><pre><span></span><code>DISCORD_TOKEN=&lt;YOUR_TOKEN&gt;
 </code></pre></div>
 <p>Replace <code>&lt;YOUR_TOKEN&gt;</code> with your Discord bot token.</p>
-<div class="admonition question">
-<p class="admonition-title">Where do I find my Discord bot token?</p>
-<p>See the maintainer guide for instructions on <a href="../../maintainer-guide/configuration/#discord_token">how to obtain a Discord bot token</a>.</p>
-</div>
 <div class="admonition danger">
 <p class="admonition-title">Security Warning</p>
 <p>Do not commit your <code>.env</code> file to version control or share your token with anyone!</p>
 </div>
+<details class="question">
+<summary>Where do I find my Discord bot token?</summary>
+<p>See the maintainer guide for instructions on <a href="../../maintainer-guide/configuration/#discord_token">how to obtain a Discord bot token</a>.</p>
+</details>
 <p>The example above is the minimum required configuration to run the bot. For more configuration options, refer
 to the <a href="../../maintainer-guide/configuration/">Configuration</a> section.</p>
 <h2 id="running-the-bot">Running the Bot<a class="headerlink" href="#running-the-bot" title="Permanent link">&para;</a></h2>

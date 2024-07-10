@@ -852,21 +852,23 @@
 <h2 id="commits">Commits<a class="headerlink" href="#commits" title="Permanent link">&para;</a></h2>
 <p>Commits should follow the <a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a> specification.
 This helps maintain a clean and structured commit history.</p>
-<div class="admonition example">
-<p class="admonition-title">Conventional Commit Format</p>
+<p>Try to keep your commits focused on a single task. If you need to make multiple changes, create separate commits
+for each change.</p>
+<details class="example">
+<summary>Conventional Commit Format</summary>
 <p>Here's an example of a good commit message:</p>
 <div class="highlight"><pre><span></span><code>feat: add uptime command
 
 Add a new command to display the bot&#39;s uptime.
 </code></pre></div>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Use Commitizen</p>
+</details>
+<details class="tip">
+<summary>Use Commitizen</summary>
 <p>The development container includes <a href="https://commitizen-tools.github.io/commitizen/">Commitizen</a> to help you
-write conventional commit messages. Run <code>cz commit</code> to create a commit message interactively.</p>
-</div>
-<p>Try to keep your commits focused on a single task. If you need to make multiple changes, create separate commits
-for each change.</p>
+write conventional commit messages. Run the following command to create a commit message interactively:</p>
+<div class="highlight"><pre><span></span><code>cz<span class="w"> </span>commit
+</code></pre></div>
+</details>
 <h3 id="automated-checks">Automated Checks<a class="headerlink" href="#automated-checks" title="Permanent link">&para;</a></h3>
 <p>The project includes pre-commit hooks to ensure your code meets the quality standards. These hooks run automatically
 before each commit.</p>
@@ -875,17 +877,17 @@ before each commit.</p>
 <li>Linting and formatting with <a href="https://docs.astral.sh/ruff/">Ruff</a></li>
 <li>Commit message validation with <a href="https://commitlint.js.org">Commitlint</a></li>
 </ul>
-<div class="admonition question">
-<p class="admonition-title">What if the pre-commit hooks fail?</p>
+<details class="question">
+<summary>What if the pre-commit hooks fail?</summary>
 <p>If the pre-commit hooks fail, you will need to address the issues before committing your changes. Follow the
 instructions provided by the pre-commit hooks to identify and fix the issues.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Running Pre-commit Hooks Manually</p>
+</details>
+<details class="question">
+<summary>How do I run the pre-commit hooks manually?</summary>
 <p>Pre-commit hooks can also be run manually using the following command:</p>
 <div class="highlight"><pre><span></span><code>poetry<span class="w"> </span>run<span class="w"> </span>pre-commit
 </code></pre></div>
-</div>
+</details>
 <p>The pre-commit hooks are intended to help us keep the codebase maintainable. If there are rules that you believe
 are too strict, please discuss them with the team.</p>
 <h2 id="pull-requests">Pull Requests<a class="headerlink" href="#pull-requests" title="Permanent link">&para;</a></h2>
@@ -900,8 +902,8 @@ be reviewed and merged into the <code>master</code> branch.</p>
 <p>Finally, <a href="https://github.com/thijsfranck/discord-app-example/compare">create a pull request on GitHub</a>. Select
 your branch as the source and the <code>master</code> branch as the base.</p>
 <p>In the pull request description, provide a brief overview of the changes and any relevant information for reviewers.</p>
-<div class="admonition example">
-<p class="admonition-title">Pull Request Description</p>
+<details class="example">
+<summary>Pull Request Description</summary>
 <p>Here's an example of a good pull request description:</p>
 <div class="highlight"><pre><span></span><code># feat: add uptime command
 
@@ -917,7 +919,7 @@ This pull request adds a new uptime command to display the bot&#39;s uptime.
 - The new command is implemented in a separate file for better organization
 - The command has been tested locally and works as expected
 </code></pre></div>
-</div>
+</details>
 <h3 id="automated-checks_1">Automated Checks<a class="headerlink" href="#automated-checks_1" title="Permanent link">&para;</a></h3>
 <p>The project includes automated checks to ensure the code meets the quality standards. These checks include:</p>
 <ul>
@@ -925,19 +927,20 @@ This pull request adds a new uptime command to display the bot&#39;s uptime.
 <li>Type checking with <a href="https://github.com/microsoft/pyright">Pyright</a></li>
 <li>Unit tests with <a href="https://docs.pytest.org/en/stable/">pytest</a></li>
 </ul>
-<div class="admonition question">
-<p class="admonition-title">What if the automated checks fail?</p>
+<details class="question">
+<summary>What if the automated checks fail?</summary>
 <p>If any of the automated checks fail, please address the issues before requesting a review. Feedback from the
 automated checks should be available in the pull request checks tab.</p>
-</div>
+</details>
 <h3 id="code-review">Code Review<a class="headerlink" href="#code-review" title="Permanent link">&para;</a></h3>
 <p>All pull requests should be reviewed by at least one other team member before merging. The reviewer will provide
 feedback and suggestions for improvement.</p>
-<div class="admonition tip">
-<p class="admonition-title">Requesting a Review</p>
-<p>Request a review from a team member by assigning them to the pull request.</p>
-</div>
 <p>Once the reviewer approves the pull request, you can merge it into the <code>master</code> branch.</p>
+<details class="question">
+<summary>How do I request a review?</summary>
+<p>Request a review from a team member by <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review">assigning them as a reviewer</a>
+to your pull request.</p>
+</details>
 <h4 id="giving-feedback">Giving Feedback<a class="headerlink" href="#giving-feedback" title="Permanent link">&para;</a></h4>
 <p>When providing feedback on a pull request, be constructive and specific. Point out areas for improvement and suggest
 possible solutions. If you have any questions or concerns, don't hesitate to ask the author for clarification.</p>
@@ -947,15 +950,15 @@ possible solutions. If you have any questions or concerns, don't hesitate to ask
 <li>Code quality and readability</li>
 <li>Adherence to the project guidelines</li>
 </ul>
-<div class="admonition example">
-<p class="admonition-title">Good Code Review Feedback</p>
+<details class="example">
+<summary>Good Code Review Feedback</summary>
 <p>Here are some examples of good code review feedback:</p>
 <div class="highlight"><pre><span></span><code>- Great work on the new command! The implementation looks good overall.
 - I noticed a small typo in the docstring. Could you update it to fix the typo?
 - The logic in the new command is a bit complex. Consider breaking it down into smaller functions for clarity.
 - The tests cover most of the functionality, but we are missing a test case for edge case X. Could you add a test for that?
 </code></pre></div>
-</div>
+</details>
 <p>Always be respectful and considerate when giving feedback. Remember that the goal is to improve the code and help
 the author grow as a developer.</p>
 <div class="admonition success">
@@ -973,20 +976,20 @@ Semantic version numbers consist of three parts: <code>major.minor.patch</code>.
 <li>For <em>new features</em> or <em>significant improvements</em>, increment the minor version.</li>
 <li>For <strong>breaking changes</strong>, increment the major version.</li>
 </ul>
-<div class="admonition question">
-<p class="admonition-title">What is a breaking change?</p>
+<details class="question">
+<summary>What is a breaking change?</summary>
 <p>A breaking change requires users to change the way they use the software. Examples include removal of features
 or backwards-incompatible API changes.</p>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Semantic Versioning</p>
+</details>
+<details class="example">
+<summary>Semantic Versioning</summary>
 <p>Here are some examples of version increments:</p>
 <ul>
 <li>Bug fixes: <code>1.0.0</code> -&gt; <code>1.0.1</code></li>
 <li>New features: <code>1.0.1</code> -&gt; <code>1.1.0</code></li>
 <li>Breaking changes: <code>1.1.0</code> -&gt; <code>2.0.0</code></li>
 </ul>
-</div>
+</details>
 <h3 id="github-actions">GitHub Actions<a class="headerlink" href="#github-actions" title="Permanent link">&para;</a></h3>
 <p>A GitHub actions workflow will automatically build and publish a new version of the Docker image when a new tag
 is created.</p>
