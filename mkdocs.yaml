@@ -1,16 +1,39 @@
+copyright: Made with 🍵 by Thijs Franck
+repo_name: thijsfranck/discord-app-example
+repo_url: https://github.com/thijsfranck/discord-app-example
 site_name: Discord App Example
 site_url: https://discord-app-example.pages.dev
-copyright: Made with 🍵 by Thijs Franck
 
 theme:
   name: material
   search: true
+
   features:
     - content.code.copy
     - navigation.indexes
     - navigation.instant
     - navigation.instant.progress
     - navigation.sections
+
+  icon:
+    logo: fontawesome/brands/discord
+    repo: fontawesome/brands/github
+
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
 
 nav:
   - Maintainer Guide:
@@ -31,9 +54,12 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tabbed
+  - toc:
+      permalink: true
 
 plugins:
   - mike
+  - search
 
 extra:
   generator: false
