@@ -9,7 +9,7 @@ exclude = ["**/test__*.py"]
 
 [tool.poetry.dependencies]
 python = "^3.12"
-discord-py = { extras = ["voice"], version = "^2.4.0" }
+discord-py = "2.4.0"
 python-dotenv = "^1.0.1"
 
 [tool.poetry.dev-dependencies]
