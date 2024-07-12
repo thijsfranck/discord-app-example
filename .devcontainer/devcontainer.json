@@ -1,4 +1,8 @@
 {
+  "build": {
+    "cacheFrom": "ghcr.io/thijsfranck/discord-app-example-devcontainer",
+    "dockerfile": "Dockerfile"
+  },
   "containerEnv": {
     "POETRY_VIRTUALENVS_CREATE": "false"
   },
@@ -40,7 +44,6 @@
   "forwardPorts": [
     8000
   ],
-  "image": "mcr.microsoft.com/vscode/devcontainers/base:debian",
   "name": "Discord App Example",
   "portsAttributes": {
     "8000": {
@@ -48,5 +51,6 @@
       "onAutoForward": "notify"
     }
   },
-  "postCreateCommand": "bash .devcontainer/postcreate.sh"
+  "postCreateCommand": "bash .devcontainer/postcreate.sh",
+  "updateContentCommand": "bash .devcontainer/updatecontent.sh"
 }
