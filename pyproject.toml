@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "discord-app-example"
-version = "0.0.0"
+version = "v0.0.0"
 description = ""
 authors = ["thijsfranck <thijsfranck@gmail.com>"]
 readme = "README.md"
@@ -126,7 +126,7 @@ default_bump_level = 0
 [tool.semantic_release.remote]
 name = "origin"
 type = "github"
-ignore_token_for_push = false
+ignore_token_for_push = true
 insecure = false
 
 [build-system]
