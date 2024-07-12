@@ -162,7 +162,12 @@ the author grow as a developer.
 
 ## Release
 
-Releases are managed through GitHub. You can create a new release along with a new tag through the GitHub web interface.
+Releases are managed through [Semantic Release](https://python-semantic-release.readthedocs.io). To generate a
+new release, run the following command:
+
+```bash
+semantic-release version --changelog --commit --push
+```
 
 ### Semantic Versioning
 
@@ -189,7 +194,7 @@ To calculate the next version number, follow these guidelines:
 ### GitHub Actions
 
 A GitHub actions workflow will automatically build and publish a new version of the Docker image when a new tag
-is created.
+is pushed to the repository.
 
 The updated image will be available on the [GitHub Container Registry](https://github.com/thijsfranck/discord-app-example/pkgs/container/discord-app-example)
 with both the release tag and the `latest` tag.
