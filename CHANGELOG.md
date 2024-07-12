@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.1.1 (2024-07-12)
+
+### Documentation
+
+* docs: add note on semantic release ([`4dc650e`](https://github.com/thijsfranck/discord-app-example/commit/4dc650ee25b8726bc197f54caea3fa5395a9b2e7))
+
 ## v0.1.0 (2024-07-12)
 
 ### Build
