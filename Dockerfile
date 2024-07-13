@@ -18,5 +18,5 @@ RUN pip install --no-cache-dir *.whl && \
 # Switch to the non-root user
 USER discord-app-example
 
-# Set the default command to run the application
-CMD ["python", "main.py"]
+# Run the application
+ENTRYPOINT ["python", "main.py"]
