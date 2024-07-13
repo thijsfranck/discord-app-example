@@ -169,6 +169,13 @@ new release, run the following command:
 semantic-release version --changelog --commit --push
 ```
 
+This command will automatically determine the next version number based on the commit history and generate a
+new tag. It will also update the changelog with the latest changes and push the changes to the repository.
+
+??? TIP "Semantic Release and Conventional Commits"
+    Semantic Release uses the commit messages to determine the type of changes and generate the release notes.
+    Make sure to follow the [commit message guidelines](#commits) to ensure accurate release notes.
+
 ### Semantic Versioning
 
 Tags should be unique and follow the [Semantic Versioning](https://semver.org/) format.
