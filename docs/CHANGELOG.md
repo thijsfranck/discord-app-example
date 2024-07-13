@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v0.1.2 (2024-07-13)
+
+### Documentation
+
+* docs: add note on semantic release and conventional commits ([`b7b8891`](https://github.com/thijsfranck/discord-app-example/commit/b7b889185359634f97ad6e8031f60dbb6fd50bda))
+
+* docs: add changelog ([`32946f3`](https://github.com/thijsfranck/discord-app-example/commit/32946f3ab43b3c69512d449de811fd09636cccb9))
+
 ## v0.1.1 (2024-07-12)
 
 ### Documentation
@@ -91,3 +99,17 @@
 * fix: disable conflicting extension and add default editor configuration ([`0f0a250`](https://github.com/thijsfranck/discord-app-example/commit/0f0a2500c011af7119764107dfbb65282e81532e))
 
 * fix: account for missing token ([`2075e7c`](https://github.com/thijsfranck/discord-app-example/commit/2075e7cf9210e4727546a6f191ad4e896a98e42d))
+
+### Unknown
+
+* Merge pull request #1 from thijsfranck/pre-commit-ci-update-config
+
+[pre-commit.ci] pre-commit autoupdate ([`0996fa7`](https://github.com/thijsfranck/discord-app-example/commit/0996fa7ee030606af81cf8db7ce4cae6d5b1e298))
+
+* [pre-commit.ci] pre-commit autoupdate
+
+updates:
+- https://github.com/charliermarsh/ruff-pre-commit → https://github.com/astral-sh/ruff-pre-commit
+- [github.com/igorshubovych/markdownlint-cli: v0.40.0 → v0.41.0](https://github.com/igorshubovych/markdownlint-cli/compare/v0.40.0...v0.41.0) ([`59039e6`](https://github.com/thijsfranck/discord-app-example/commit/59039e60cc51cf73294b90c53131643d3c6c03d6))
+
+* initial commit ([`bebff85`](https://github.com/thijsfranck/discord-app-example/commit/bebff85e676c833a9915086848232d02177fa0b1))
