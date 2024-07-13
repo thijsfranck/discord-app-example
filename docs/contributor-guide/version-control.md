@@ -166,7 +166,7 @@ Releases are managed through [Semantic Release](https://python-semantic-release.
 new release, run the following command:
 
 ```bash
-semantic-release version --changelog --commit --push
+poetry run semantic-release version --changelog --commit --push
 ```
 
 This command will automatically determine the next version number based on the commit history and generate a

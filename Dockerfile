@@ -8,8 +8,8 @@ RUN addgroup --system discord-app-example && \
 # Set the working directory
 WORKDIR /app
 
-# Copy the wheel file and main.py, set permissions to read-only for the non-root user
-COPY --chown=discord-app-example:discord-app-example --chmod=0400 dist/*.whl main.py ./
+# Copy the wheel file to the working directory
+COPY dist/*.whl ./
 
 # Install the wheel file and clean up to reduce image size
 RUN pip install --no-cache-dir *.whl && \
@@ -19,4 +19,4 @@ RUN pip install --no-cache-dir *.whl && \
 USER discord-app-example
 
 # Run the application
-ENTRYPOINT ["python", "main.py"]
+ENTRYPOINT ["python", "-m", "discord_app_example"]
