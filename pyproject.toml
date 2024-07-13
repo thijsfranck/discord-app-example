@@ -134,6 +134,9 @@ minor_tags = ["feat"]
 patch_tags = ["docs", "fix", "perf"]
 default_bump_level = 0
 
+[tool.semantic_release.publish]
+upload_to_vcs_release = false
+
 [tool.semantic_release.remote]
 name = "origin"
 type = "github"
