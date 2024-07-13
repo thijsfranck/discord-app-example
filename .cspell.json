@@ -13,7 +13,7 @@
     ".gitignore",
     "Dockerfile",
     "LICENSE",
-    "CHANGELOG.md",
+    "docs/CHANGELOG.md",
     "**/*.json",
     "**/*.toml",
     "**/*.yaml",
