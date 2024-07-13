@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.2.0 (2024-07-13)
+
+### Feature
+
+* feat: add development mode ([`ff9b469`](https://github.com/thijsfranck/discord-app-example/commit/ff9b4690a342f2d4135331448cb8dd9238304500))
+
 ## v0.1.3 (2024-07-13)
 
 ### Documentation
