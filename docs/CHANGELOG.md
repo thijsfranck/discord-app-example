@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.1.3 (2024-07-13)
+
+### Documentation
+
+* docs: exclude additional commit patterns from changelog ([`5a49d21`](https://github.com/thijsfranck/discord-app-example/commit/5a49d219f52093fdb0710bee18d2b3d6ea00c84a))
+
 ## v0.1.2 (2024-07-13)
 
 ### Documentation
@@ -99,3 +105,11 @@
 * fix: disable conflicting extension and add default editor configuration ([`0f0a250`](https://github.com/thijsfranck/discord-app-example/commit/0f0a2500c011af7119764107dfbb65282e81532e))
 
 * fix: account for missing token ([`2075e7c`](https://github.com/thijsfranck/discord-app-example/commit/2075e7cf9210e4727546a6f191ad4e896a98e42d))
+
+### Unknown
+
+* [pre-commit.ci] pre-commit autoupdate
+
+updates:
+- https://github.com/charliermarsh/ruff-pre-commit → https://github.com/astral-sh/ruff-pre-commit
+- [github.com/igorshubovych/markdownlint-cli: v0.40.0 → v0.41.0](https://github.com/igorshubovych/markdownlint-cli/compare/v0.40.0...v0.41.0) ([`59039e6`](https://github.com/thijsfranck/discord-app-example/commit/59039e60cc51cf73294b90c53131643d3c6c03d6))
