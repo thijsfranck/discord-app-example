@@ -94,6 +94,9 @@ exclude_commit_patterns = [
     "^refactor",
     "^style",
     "^test",
+    "[pre-commit.ci] pre-commit autoupdate",
+    "Merge pull request",
+    "initial commit",
 ]
 
 [tool.semantic_release.changelog.environment]
