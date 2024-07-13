@@ -94,7 +94,7 @@ exclude_commit_patterns = [
     "^refactor",
     "^style",
     "^test",
-    "pre-commit autoupdate",
+    '^\[pre-commit\.ci\]',
     "Merge pull request",
     "initial commit",
 ]
