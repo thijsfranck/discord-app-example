@@ -7,3 +7,4 @@ and configure the bot, as well as how to manage the bot in production.
 
 - [Installation](./installation.md): How to install the bot.
 - [Configuration](./configuration.md): How to configure the bot.
+- [Changelog](../CHANGELOG.md): The bot's changelog.

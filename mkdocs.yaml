@@ -40,6 +40,7 @@ nav:
     - maintainer-guide/index.md
     - Installation: maintainer-guide/installation.md
     - Configuration: maintainer-guide/configuration.md
+    - Changelog: CHANGELOG.md
   - Contributor Guide:
     - contributor-guide/index.md
     - Development Environment: contributor-guide/development-environment.md
