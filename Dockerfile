@@ -1,9 +1,8 @@
 # Use the official Python 3.12 slim image as the base image
 FROM python:3.12-slim
 
-# Add a non-root user and group to run the application
-RUN addgroup --system discord-app-example && \
-  adduser --system --ingroup discord-app-example discord-app-example
+# Add a non-root user
+RUN adduser --system discord-app-example
 
 # Set the working directory
 WORKDIR /app
