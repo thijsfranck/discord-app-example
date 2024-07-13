@@ -39,8 +39,7 @@
     "ghcr.io/devcontainers/features/python:1": {
       "installTools": false,
       "version": "3.12"
-    },
-    "ghcr.io/prulloac/devcontainer-features/commitizen:1": {}
+    }
   },
   "forwardPorts": [
     8000
