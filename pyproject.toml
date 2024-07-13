@@ -67,6 +67,7 @@ select = ["ALL"]
 convention = "numpy"
 
 [tool.commitizen]
+bump_message = "chore: bump version $current_version → $new_version"
 changelog_file = "docs/CHANGELOG.md"
 name = "cz_conventional_commits"
 tag_format = "v$version"
