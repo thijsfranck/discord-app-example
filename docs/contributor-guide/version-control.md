@@ -38,11 +38,11 @@ for each change.
     ```
 
 ??? TIP "Use Commitizen"
-    The development container includes [Commitizen](https://commitizen-tools.github.io/commitizen/) to help you
-    write conventional commit messages. Run the following command to create a commit message interactively:
+    The workspace includes [Commitizen](https://commitizen-tools.github.io/commitizen/) to help you write conventional
+    commit messages. Run the following command to create a commit message interactively:
 
     ```bash
-    cz commit
+    poetry run cz commit
     ```
 
 ### Automated Checks
@@ -162,18 +162,18 @@ the author grow as a developer.
 
 ## Release
 
-Releases are managed through [Semantic Release](https://python-semantic-release.readthedocs.io). To generate a
+Releases are managed through [Commitizen](https://commitizen-tools.github.io/commitizen/). To generate a
 new release, run the following command:
 
 ```bash
-poetry run semantic-release version --changelog --commit --push
+poetry run cz bump
 ```
 
 This command will automatically determine the next version number based on the commit history and generate a
 new tag. It will also update the changelog with the latest changes and push the changes to the repository.
 
-??? TIP "Semantic Release and Conventional Commits"
-    Semantic Release uses the commit messages to determine the type of changes and generate the release notes.
+??? TIP "Commitizen and Conventional Commits"
+    Commitizen uses the commit messages to determine the type of changes and generate the release notes.
     Make sure to follow the [commit message guidelines](#commits) to ensure accurate release notes.
 
 ### Semantic Versioning
