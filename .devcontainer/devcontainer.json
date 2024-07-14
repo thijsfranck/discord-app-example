@@ -23,6 +23,12 @@
         },
         "editor.formatOnSave": true,
         "editor.formatOnSaveMode": "file",
+        "files.exclude": {
+          "**/.pytest_cache": true,
+          "**/.ruff_cache": true,
+          "**/__pycache__": true
+        },
+        "files.insertFinalNewline": true,
         "python.analysis.typeCheckingMode": "basic",
         "python.testing.pytestArgs": [
           "."
