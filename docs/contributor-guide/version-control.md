@@ -170,7 +170,14 @@ poetry run cz bump
 ```
 
 This command will automatically determine the next version number based on the commit history and generate a
-new tag. It will also update the changelog with the latest changes and push the changes to the repository.
+new tag. It will also update the changelog with the latest changes. To push the changes to the repository, run:
+
+```bash
+git push && git push --tags
+```
+
+The release will trigger a [GitHub actions workflow](#github-actions) to build and publish a new version of the
+Docker image and update the documentation.
 
 ??? TIP "Commitizen and Conventional Commits"
     Commitizen uses the commit messages to determine the type of changes and generate the release notes.
