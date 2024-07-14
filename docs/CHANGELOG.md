@@ -1,3 +1,9 @@
+## v0.4.0 (2024-07-14)
+
+### Feat
+
+- remove developer mode and add better error handling
+
 ## v0.3.0 (2024-07-13)
 
 ### Feat
