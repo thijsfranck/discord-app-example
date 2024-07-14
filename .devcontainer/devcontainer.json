@@ -4,7 +4,6 @@
     "dockerfile": "Dockerfile"
   },
   "containerEnv": {
-    "MODE": "development",
     "POETRY_VIRTUALENVS_CREATE": "false"
   },
   "customizations": {

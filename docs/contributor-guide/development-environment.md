@@ -79,7 +79,7 @@ to the [Configuration](../maintainer-guide/configuration.md) section.
 With your development environment set up and configured, you can run the bot using the following command:
 
 ```bash
-poetry run python -m discord_app_example --development
+poetry run python -m discord_app_example
 ```
 
 This command starts the bot in development mode, which enables features such as loading the `.env` file.

@@ -1,3 +1,3 @@
-from .client import client
+from .client import DiscordAppExampleError, client
 
-__all__ = ["client"]
+__all__ = ["DiscordAppExampleError", "client"]
