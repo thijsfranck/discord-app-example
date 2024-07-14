@@ -1,6 +1,7 @@
 autouse
 codespace
 conftest
+commitizen
 docstrings
 dotenv
 mkdocs
