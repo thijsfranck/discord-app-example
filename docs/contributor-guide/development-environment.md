@@ -82,8 +82,6 @@ With your development environment set up and configured, you can run the bot usi
 poetry run python -m discord_app_example
 ```
 
-This command starts the bot in development mode, which enables features such as loading the `.env` file.
-
 The bot should now be online and ready to respond to commands in your Discord server.
 
 ## Running the Documentation Locally
