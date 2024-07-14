@@ -179,6 +179,13 @@ git push && git push --tags
 The release will trigger a [GitHub actions workflow](#github-actions) to build and publish a new version of the
 Docker image and update the documentation.
 
+??? TIP "Dry Run"
+    You can perform a dry run to see the changes that will be made without actually committing them:
+
+    ```bash
+    poetry run cz bump --dry-run
+    ```
+
 ??? TIP "Commitizen and Conventional Commits"
     Commitizen uses the commit messages to determine the type of changes and generate the release notes.
     Make sure to follow the [commit message guidelines](#commits) to ensure accurate release notes.
