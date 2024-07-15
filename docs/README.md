@@ -19,4 +19,4 @@ This documentation is divided into the following sections:
 
 ## License
 
-This project is licensed under the MIT license.
+This project is licensed under the [MIT license](./LICENSE.md).
