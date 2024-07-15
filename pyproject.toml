@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "discord-app-example"
-version = "0.4.0"
+version = "0.4.1"
 description = ""
 authors = ["thijsfranck <thijsfranck@gmail.com>"]
 readme = "README.md"
