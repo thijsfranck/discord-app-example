@@ -43,9 +43,3 @@ repos:
       - id: markdownlint
         name: Check for Markdown linting errors
         args: ["--ignore", "docs/CHANGELOG.md"]
-
-  - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v8.10.1
-    hooks:
-      - id: cspell
-        name: Check for spelling errors

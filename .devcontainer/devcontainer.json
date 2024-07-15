@@ -12,7 +12,6 @@
         "charliermarsh.ruff",
         "DavidAnson.vscode-markdownlint",
         "KnisterPeter.vscode-commitizen",
-        "streetsidesoftware.code-spell-checker",
         "tamasfe.even-better-toml",
         "-ms-python.autopep8"
       ],
