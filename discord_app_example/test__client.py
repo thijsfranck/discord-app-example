@@ -16,7 +16,7 @@ def test__client_has_expected_permissions() -> None:
     assert client.intents == Intents.default()
 
 
-@pytest.mark.asyncio()
+@pytest.mark.asyncio
 async def test__on_ready_logs_correct_message(mocker: MockerFixture) -> None:
     """
     Test the on_ready function.
