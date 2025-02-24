@@ -2,14 +2,14 @@ default_install_hook_types: [commit-msg, pre-commit]
 
 repos:
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v3.28.0
+    rev: v4.2.2
     hooks:
       - id: commitizen
         name: Check commit message format
         stages: [commit-msg]
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
       - id: check-merge-conflict
         name: Check for merge conflicts
@@ -29,7 +29,7 @@ repos:
         args: [--markdown-linebreak-ext=md]
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.5.6
+    rev: v0.9.7
     hooks:
       - id: ruff
         name: Check for Python linting errors
@@ -38,7 +38,7 @@ repos:
         name: Run Python formatter
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.41.0
+    rev: v0.44.0
     hooks:
       - id: markdownlint
         name: Check for Markdown linting errors
