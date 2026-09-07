@@ -65,6 +65,7 @@ Here are some examples of how to write good documentation for functions and clas
         attribute : int
             Description of the attribute.
         """
+
         ...
     ```
 
