@@ -7,7 +7,7 @@ For guidelines on writing good tests, see the contributor guide.
 import pytest
 
 
-@pytest.fixture()
+@pytest.fixture
 def example_data() -> list[int]:
     """
     Fixture that returns a list of integers for testing.
